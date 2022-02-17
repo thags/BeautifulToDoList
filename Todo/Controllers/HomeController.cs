@@ -119,7 +119,7 @@ public class HomeController : Controller
     [HttpGet]
     public JsonResult PopulateForm(int id)
     {
-        var todo = GetById(id);
+        TodoItem todo = GetById(id);
         return Json(todo);
     }
 
